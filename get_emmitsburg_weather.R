@@ -14,8 +14,8 @@ wind_speed_miles <- wind_speed_km / 1.6
 df <- data.frame(
   time = format(Sys.time(), tz = "America/New_York", usetz = TRUE),
   station = "KHGR",
-  temp_c = temp_c, temp_f, temp_f,
-  wind_speed_km = wind_speed_km, wind_speed_miles, wind_speed_miles
+  temp_c = temp_c, temp_f
+  wind_speed_km = wind_speed_km, wind_speed_miles
 )
 
 dir.create("data", showWarnings = FALSE)
